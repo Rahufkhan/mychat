@@ -1,0 +1,68 @@
+<!-- variable declaration
+getelement id classname
+getAttribute
+setAttribute
+functions
+addevent listener -->
+
+
+<input type="text" id="mytextbox" myattr="something" class="myclass">
+<input onclick="myfunction(event)" type="button" id="mybutton" value="click me" class="myclass">
+
+    <script type="text/javascript">
+        // var element = 0;
+        // alert(element);
+
+        // var element= document.getElementById("mytextbox");
+        // alert(element);
+        // alert(element.type);
+        // alert(element.myattr);
+        //  alert(element.getAttribute("myattr"));
+        // element.setAttribute("type","buttton");
+        // element.setAttribute("value","click me also");
+        // console.log(element.getAttribute("myattr"));
+        // console.log(element.getAttribute("type"));
+
+
+        // var elements = document.getElementsByClassName("myclass");
+        // alert(elements[0].id);
+        // alert(elements[1].id);
+
+        // for (var i=0; i<elements.length; i++){
+        //     alert(elements[i].id);
+            
+        // }
+
+        // function myfunction(){
+        //     var elements = document.getElementsByClassName("myclass");
+        //     for (var i=0; i<elements.length; i++){
+        //         alert(elements[i].id);            
+        //     }
+        // }
+
+        // myfunction();
+
+
+        var element = document.getElementById("mybutton");
+        // element.addEventListener("click",function(){
+        //     alert("something was called");
+        // });
+
+        // element.addEventListener("click",function(event){
+        //     alert(event);
+        // });
+
+        // element.addEventListener("click",function(event){
+        //     alert(event.target.id);
+        // });
+      
+        function myfunction(e){
+            alert(e.target.id);
+        }
+        
+
+
+
+
+
+    </script>
