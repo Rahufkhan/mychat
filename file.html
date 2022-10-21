@@ -3,13 +3,22 @@ getelement id classname
 getAttribute
 setAttribute
 functions
-addevent listener -->
+add event listener -->
 
 
-<input type="text" id="mytextbox" myattr="something" class="myclass">
-<input onclick="myfunction(event)" type="button" id="mybutton" value="click me" class="myclass">
+<!-- <input type="text" id="mytextbox" myattr="something" class="myclass">
+<input onclick="myfunction(event)" type="button" id="mybutton" value="click me" class="myclass"> -->/
+
+
+<input type="text" id="mytext" myown="something">
+<input type="button" value="sign in" id="mybutton">
+
+
 
     <script type="text/javascript">
+        var num=document.getElementById("mytext");
+        num.setAttribute("type","button");
+
         // var element = 0;
         // alert(element);
 
@@ -43,7 +52,7 @@ addevent listener -->
         // myfunction();
 
 
-        var element = document.getElementById("mybutton");
+        // var element = document.getElementById("mybutton");
         // element.addEventListener("click",function(){
         //     alert("something was called");
         // });
@@ -56,9 +65,9 @@ addevent listener -->
         //     alert(event.target.id);
         // });
       
-        function myfunction(e){
-            alert(e.target.id);
-        }
+        // function myfunction(e){
+        //     alert(e.target.id);
+        // }
         
 
 
